@@ -35,4 +35,8 @@ table {
  .col-md-3 {
 	 text-align: right;
 }
+
+#checkout-total, #total {
+	font-weight: bold;
+}
  
