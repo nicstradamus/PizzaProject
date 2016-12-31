@@ -209,7 +209,7 @@ if (document.getElementById("jalapeno").checked) {
 	v8 = 'jal';
 }
 if (vegCount > 4) {
-	vegCost = 0
+	vegCost = 2;
 }
 
 
