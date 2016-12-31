@@ -1,0 +1,147 @@
+<!-- XHTML 1.0 Strict -->
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/home.css">
+		<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	
+
+		<title>Pizza Menu</title>
+	</head>
+	
+	<body>
+		<!------LOGO------->
+		<div class="content container">
+			<div class="row">
+				<section class="col-sm-12 col-md-8 col-lg-6">
+					<div class="center" id="logo-container">
+						<a href="home.html"><img src="./images/logo.png" id="logo"></a>
+					</div>
+				</section>
+			</div><!--row--->
+		</div><!--content container-->
+		
+		<!-----------MENU----------->
+		<div class="content container">
+			<h1 id="menu-header">Menu</h1>
+			<!-----SIZE------>
+			<div class="container">
+				<h3>Pizza Size</h3>
+				<form action="">
+				  <input type="radio" name="size" value="personal" id="personal"> Personal<br>
+				  <input type="radio" name="size" value="medium" id="medium"> Medium<br>
+				  <input type="radio" name="size" value="large" id="large"> Large<br>
+				  <input type="radio" name="size" value="extra-large" id="extra-large"> Extra Large
+				</form>
+			</div>
+			<!-----SAUCE------>
+			<div class="container" id="sauce">
+				<h3>Sauce Options</h3>
+				<form action="">
+				  <input type="radio" name="sauce" value="marinara" id="marinara"> Marinara<br>
+				  <input type="radio" name="sauce" value="alfredo" id="alfredo"> Alfredo<br>
+				  <input type="radio" name="sauce" value="bbq" id="bbq"> BBQ<br>
+				  <input type="radio" name="sauce" value="no" id="no-sauce"> No Sauce<br>
+				</form>
+			</div>			
+			<!-----MEATS------>
+			<div class="container" id="meat">
+				<h3>Meat Toppings</h3>
+				<form action="">
+				  <input type="checkbox" name="pepperoni" value="pepperoni" class="meat" id="pepperoni"> Pepperoni<br>
+				  <input type="checkbox" name="sausage" value="sausage" class="meat" id="sausage"> Sausage<br>
+				  <input type="checkbox" name="canadian bacon" value="canadian bacon" class="meat" id="canadian-bacon"> Canadian Bacon<br>
+				  <input type="checkbox" name="ground beef" value="ground beef" class="meat" id="ground-beef"> Ground Beef<br>
+				  <input type="checkbox" name="anchovi" value="anchovi" class="meat" id="anchovi"> Anchovi<br>
+				  <input type="checkbox" name="chicken" value="chicken" class="meat" id="chicken"> Chicken<br>
+				</form>
+			</div>
+			<!-----VEG------>
+			<div class="container" id="veg">
+				<h3>Vegetable Toppings</h3>
+				<form action="">
+				  <input type="checkbox" name="tomatoes" value="tomatoes" id="tomatoes"> Tomatoes<br>
+				  <input type="checkbox" name="onions" value="onions" id="onions"> Onions<br>
+				  <input type="checkbox" name="olives" value="olives" id="olives"> Olives<br>
+				  <input type="checkbox" name="green peppers" value="green peppers" id="green-peppers"> Green Peppers<br>
+				  <input type="checkbox" name="mushrooms" value="mushrooms" id="mushrooms"> Mushrooms<br>
+				  <input type="checkbox" name="pineapple" value="pineapple" id="pineapple"> Pineapple<br>
+				  <input type="checkbox" name="spinach" value="spinach" id="spinach"> Spinach<br>
+				  <input type="checkbox" name="jalapeno" value="jalapeno" id="jalapeno"> Jalapeno<br>
+				</form>
+			</div>
+			<!-----CHEESE------>
+			<div class="container" id="cheese">
+				<h3>Cheese Options</h3>
+				<form action="">
+				  <input type="radio" name="cheese" value="regular" id="regular-cheese"> Regular<br>
+				  <input type="radio" name="cheese" value="no cheese" id="no-cheese"> No Cheese<br>
+				  <input type="radio" name="cheese" value="extra-cheese" id="extra-cheese"> Extra Cheese<br>
+				</form>
+			</div>
+			<!-----CRUST------>
+			<div class="container" id="crust">
+				<h3>Crust Options</h3>
+				<form action="">
+				  <input type="radio" name="crust" value="plain" id="plain"> Plain Crust<br>
+				  <input type="radio" name="crust" value="garlic butter" id="garlic-butter"> Garlic Butter Crust<br>
+				  <input type="radio" name="crust" value="cheese-stuffed" id="cheese-stuffed"> Cheese Stuffed Crust<br>
+				  <input type="radio" name="crust" value="spicy" id="spicy"> Spicy Crust<br>
+				  <input type="radio" name="crust" value="house special" id="house-special"> House Special Crust<br>
+				</form>
+			</div>
+			
+		</div>
+		<br><br>
+		
+		<!-----------SUMBIT BUTTON----------->
+		<button role="button" class="btn btn-submit" id="submit">Generate Checkout Total</button>  
+		
+		<!-----------CHECKOUT RECEIPT----------->
+		<!-- <div class="content container"> -->
+			<h1 id="checkout-header">Checkout Total</h1>
+			<table>
+			  <tr>
+				<td class="col-md-6" id="checkout-size">--</td>
+				<td class="col-md-3" id="size-cost">--</td>
+			  </tr>
+			  <tr>
+				<td class="col-md-6" id="checkout-sauce">--</td>
+				<td class="col-md-3" id="sauce-cost">--</td>
+			  </tr>
+			  <tr>
+				<td class="col-md-6" id="checkout-crust">--</td>
+				<td class="col-md-3" id="crust-cost">--</td>
+			  </tr>
+			  <tr>
+				<td class="col-md-6" id="checkout-cheese">--</td>
+				<td class="col-md-3" id="cheese-cost">--</td>
+			  </tr>
+			  <tr>
+				<td class="col-md-6" id="checkout-meat">--</td>
+				<td class="col-md-3" id="meat-cost">--</td>
+			  </tr>
+			  <tr>
+				<td class="col-md-6" id="checkout-veg">--</td>
+				<td class="col-md-3" id="veg-cost">--</td>
+			  </tr>
+			   <tr>
+				<td class="col-md-6" id="checkout-total">Total</td>
+				<td class="col-md-3" id="total">--</td>
+			  </tr>
+			</table>
+			<br><br><br><br>
+			
+		<!-- </div> -->
+		<!-----JAVASCRIPT------>
+		<script type="text/javascript" src="./js/price.js"></script>
+	</body>
+	
+</html>	

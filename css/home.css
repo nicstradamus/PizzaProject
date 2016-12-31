@@ -1,0 +1,38 @@
+body {
+	background: #A52D38;
+}
+
+/*====================
+         LOGO         
+======================*/
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+#logo {
+	height: 100px;
+	width: auto;
+	margin: auto;
+	top: 200;
+}
+
+/* #table-header-left { */
+	/* width: 50px; */
+	/* line-height: 2; */
+/* } */
+/* #table-header-left { */
+	/* width: 20px; */
+	/* line-height: 2; */
+/* } */
+
+table {
+   border: 1px solid black;
+   width: 70%;
+   table-layout: fixed;
+}
+ .col-md-3 {
+	 text-align: right;
+}
+ 
